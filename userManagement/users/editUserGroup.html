@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ABC Limited</title>
+  <title>User Management</title>
   <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../assets/css/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css">
@@ -37,7 +35,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b><b>ABC </b>Limited</span>
+      <span class="logo-lg"><b><b>User </b>Management</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -156,8 +154,8 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> User Management</a></li>
-        <li><a href="#">Manage User</a></li>
-        <li class="active">Edit User</li>
+        <li><a href="#">User Group</a></li>
+        <li class="active">Edit User Group</li>
       </ol>
     </section>
 
@@ -171,51 +169,12 @@
             
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="manage_users.html" method="post">
+            <form role="form" action="userGroups.html" method="post">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="fullName">Full Name</label>
-                  <input type="text" class="form-control" id="fullName" name="fullName" value="A John Doe" placeholder="Enter Full Name">
+                  <label for="fullName">Group Name</label>
+                  <input type="text" class="form-control" id="groupName" name="groupName" value="Administrator" placeholder="Enter Group Name">
                 </div>
-				<div class="form-group">
-                  <label for="phoneNo">Phone No.</label>
-                  <input type="tel" class="form-control" id="phoneNo" name="phoneNo" value="0723554765" placeholder="Enter Phone No.">
-                </div>
-				<div class="form-group">
-                  <label for="emailAddress">Email address</label>
-                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" value="johndoe@gmail.com" placeholder="Enter Email">
-                </div>
-				<div class="box-body">
-				  <!-- Date -->
-				  <div class="form-group">
-					<label>DOB:</label>
-
-					<div class="input-group date">
-					  <div class="input-group-addon">
-						<i class="fa fa-calendar"></i>
-					  </div>
-					  <input type="text" class="form-control pull-right" id="datepicker" value="04/05/2018">
-					</div>
-					<!-- /.input group -->
-				  </div>
-				<div class="form-group">
-                  <label>User Groups</label>
-                  <select class="form-control">
-                    <option>Administrator</option>
-                    <option selected="selected">Manager</option>
-                    <option>Accountant</option>
-                    <option>Sales</option>
-                    <option>HR</option>
-                  </select>
-                </div>
-				<div class="form-group">
-                  <label>Gender</label>
-                  <select class="form-control">
-                    <option>Male</option>
-                    <option>Female</option>
-                  </select>
-                </div>
-              </div>
               <!-- /.box-body -->
 
               <div class="box-footer">
@@ -248,7 +207,7 @@
 <!-- jQuery 3 -->
 <script src="../assets/js/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
 <script src="../assets/js/fastclick/lib/fastclick.js"></script>
 <!-- Select2 -->

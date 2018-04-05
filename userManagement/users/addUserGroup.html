@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ABC Limited</title>
+  <title>User Management</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../assets/css/Ionicons/css/ionicons.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="../assets/css/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -26,24 +24,9 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+  
   <!-- Google Font -->
   <link rel="stylesheet" href="../assets/css/Stylecss.css">
-  <style>
-    .example-modal .modal {
-      position: relative;
-      top: auto;
-      bottom: auto;
-      right: auto;
-      left: auto;
-      display: block;
-      z-index: 1;
-    }
-
-    .example-modal .modal {
-      background: transparent !important;
-    }
-  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -54,7 +37,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>ABC </b>Limited</span>
+      <span class="logo-lg"><b>User </b>Management</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -137,7 +120,7 @@
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
+              <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -155,11 +138,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="manage_users.html"><i class="fa fa-circle-o"></i> Manage User</a></li>
-            <li class="active"><a href="userGroups.html"><i class="fa fa-circle-o"></i> User Groups</a></li>
+            <li class="active"><a href="manage_users.html"><i class="fa fa-circle-o"></i> Manage User</a></li>
+            <li><a href="userGroups.html"><i class="fa fa-circle-o"></i> User Groups</a></li>
           </ul>
         </li>
-        
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -170,92 +152,44 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        User List
+        Add User Group
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> User Management</a></li>
         <li><a href="#">User Group</a></li>
+        <li class="active">Add User Group</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            
             <!-- /.box-header -->
-            <div class="box-body">
-			<table>
-			<tr>
-				<td width="100px">
-					<a href="addUserGroup.html" class="btn btn-block btn-danger">Add User Group</a>
-				</td>
-			</tr>
-			<tr><td height="10px">&nbsp;</td></tr>
-			</table>
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>Group Name</th>
-				  <th>Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Administrator</td>
-				  <td class="btn-group" width="89%">
-					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="editUserGroup.html">Edit</a></li>
-					 </ul>
-				   </td>
-                </tr>
-                <tr>
-                  <td>Manager</td>
-				  <td class="btn-group" width="89%">
-					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="editUserGroup.html">Edit</a></li>
-					 </ul>
-				   </td>
-                </tr>
-                <tr>
-                  <td>Accounts</td>
-				  <td class="btn-group" width="89%">
-					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="editUserGroup.html">Edit</a></li>
-					 </ul>
-				   </td>
-                </tr>
-                <tr>
-                  <td>Human Resource</td>
-				  <td class="btn-group" width="89%">
-					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="editUserGroup.html">Edit</a></li>
-					 </ul>
-				   </td>
-                </tr>
-                </tbody>
-                <tr>
-                  <td>Marketing</td>
-				  <td class="btn-group" width="89%">
-					<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="editUserGroup.html">Edit</a></li>
-					 </ul>
-				   </td>
-                </tr>
-                
-              </button>
-              </table>
-            </div>
-            <!-- /.box-body -->
+            <!-- form start -->
+            <form role="form" action="userGroups.html" method="post">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="fullName">Group Name</label>
+                  <input type="text" class="form-control" id="groupName" name="fullName" placeholder="Enter Group Name">
+                </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
           <!-- /.box -->
+
+          
+          <!-- /.box -->
         </div>
-        <!-- /.col -->
+        <!--/.col (right) -->
       </div>
       <!-- /.row -->
     </section>
@@ -263,9 +197,12 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.4.0
+    </div>
+  <footer class="main-footer">
     <strong>Copyright &copy; 2018 <a href="#">ABC Limited</a>.</strong> All rights reserved.
   </footer>
-
 </div>
 <!-- ./wrapper -->
 
@@ -273,31 +210,12 @@
 <script src="../assets/js/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../assets/js/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../assets/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../assets/js/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../assets/js/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../assets/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../assets/js/demo.js"></script>
-<!-- page script -->
-
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
+<!-- Page script -->
 </body>
 </html>
